@@ -66,6 +66,6 @@ Instructions:
     You'll need to add a .then and a .catch. Pass the response to addSearchHeader on resolve or
     pass 'unknown' to addSearchHeader if it rejects.
      */
-    get('../data/earth-like-results.json').then(addSearchHeader(response)).catch(addSearchHeader('unknown'));
+    get('../data/earth-like-results.json').then(addSearchHeader).catch(addSearchHeader('unknown'));
   });
 })(document);
